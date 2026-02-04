@@ -1,0 +1,21 @@
+IDENTIFICATION DIVISION.
+PROGRAM-ID. LARGEST-3.
+
+DATA DIVISION.
+WORKING-STORAGE SECTION.
+01 A PIC 9(3).
+01 B PIC 9(3).
+01 C PIC 9(3).
+
+PROCEDURE DIVISION.
+    ACCEPT A
+    ACCEPT B
+    ACCEPT C
+    IF A > B AND A > C
+        DISPLAY "A is Largest"
+    ELSE IF B > C
+        DISPLAY "B is Largest"
+    ELSE
+        DISPLAY "C is Largest"
+    END-IF
+    STOP RUN.
